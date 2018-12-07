@@ -36,7 +36,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client) => {
     },
 
   ]
-  
+
   db.collection('Users').insertMany(data, (err, result) => {
     if (err) {
       return console.log('Unable to insert user', err);
@@ -45,5 +45,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client) => {
     console.log(result.ops);
   });
 
+
+  db.collection('Users').deleteOne({ age: 25 })
   client.close();
 });
