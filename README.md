@@ -14,4 +14,4 @@
 ### Run mongo
 > mongo
 ### shell mongo
-[https://docs.mongodb.com/manual/reference/mongo-shell/] (https://docs.mongodb.com/manual/reference/mongo-shell/)
+[shell script] (https://docs.mongodb.com/manual/reference/mongo-shell/)
