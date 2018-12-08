@@ -15,3 +15,9 @@
 > mongo
 ### shell mongo
 [shell script] (https://docs.mongodb.com/manual/reference/mongo-shell/)
+
+### deploy heroku
+### Cài đặt heroku-cli [dowload](https://devcenter.heroku.com/articles/heroku-cli)
+* Tạo project heroku create ten_project
+* Tạo DB mongo: heroku addons:create mongolab:sandbox -a murmuring-escarpment-40481
+* View log: heroku logs --tail --app murmuring-escarpment-40481
