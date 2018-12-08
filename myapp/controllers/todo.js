@@ -11,4 +11,10 @@ router.get('/todos', async (req, res, next) => {
 })
 
 
+router.post('/todos', async (req, res, next) => {
+  console.log('===============>', req.body);
+  const data = await Todo.create(req.body)
+  res.json(data)
+})
+
 module.exports = router;

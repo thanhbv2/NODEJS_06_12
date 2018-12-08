@@ -1,5 +1,5 @@
 const express = require('express');
-const bodyParse = require('body-parser');
+const bodyParser = require('body-parser');
 const db = require('./config/db');
 const registerRoute = require('./controllers');
 const app = express();
@@ -9,7 +9,8 @@ const app = express();
 
 
 
-app.use(bodyParse.json());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/", registerRoute)
 
 const PORT = process.env.PORT || '3000';
