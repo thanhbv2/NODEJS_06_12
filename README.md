@@ -7,5 +7,22 @@
 ```js
 npm login
 npm publish --access=public
+{
+  "name": "@vanthanhgt89/my-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vanthanhgt89@gmail.com",
+  "license": "MIT"
+}
+
 ```
-* npm install libs 
+
+* npm install @vanthanhgt89/event_listener
+> "@vanthanhgt89/event_listener": "^1.0.0",
+
+* Khi cần chỉ đề file local
+>   VD: "event_listener": "file:/libs/eventListener",
