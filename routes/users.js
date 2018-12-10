@@ -1,4 +1,5 @@
 const express = require('express');
+const { EventEmitter } = require('@vanthanhgt89/event_listener')
 const fs = require('fs');
 const router = express.Router();
 let data = require('./mockdata');
@@ -14,6 +15,7 @@ const mockup = [
 
 /* GET users listing. */
 router.get('/', function (req, res, next) {
+  console.log('===============>', EventEmitter);
   res.json(data);
 });
 
