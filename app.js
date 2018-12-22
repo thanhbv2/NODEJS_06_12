@@ -1,6 +1,16 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
+const db = require('./models');
+
+
+db.TodoList.query()
+
+
+console.log('===============>', db);
+// db.todo_lists.find().then(result => {
+//   console.log('===============>', result);
+// })
 // var cookieParser = require('cookie-parser');
 // var logger = require('morgan');
 
