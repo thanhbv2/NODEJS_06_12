@@ -1,11 +1,12 @@
 const db = require('../config/db');
 
-const Todo = db.model('Todo', {
+const Todo = db.model('Test', {
   text: {
     type: String,
     required: true,
     minLength: 1,
-    trim: true
+    trim: true,
+    unique: true
   },
   completed: {
     type: Boolean,
